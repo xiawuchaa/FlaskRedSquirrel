@@ -1,0 +1,94 @@
+{% extends "bootstrap/base.html" %}
+
+
+{% block styles %}
+    {{ super() }}
+    <style>
+        .col-xs-1-5{
+            width:19%;
+        }
+    </style>
+{% endblock styles %}
+
+
+
+{% block content %}
+    <div class="container">
+
+        <div class="row col-xs-offset-5">
+            <span class="glyphicon glyphicon-cog"></span>
+        </div>
+        <div class="row">
+            <div class="col-xs-2">
+                 <a href=""><img src="../static/images/48.jpg"></a>
+            </div>
+            <div>
+                <div class="col-xs-6">
+                    <h5>莫有昵称</h5>
+                </div>
+                <div class="col-xs-6">
+                   <h6>邀请码:TUTD</h6>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <div class="row">
+                <h5 class="col-xs-2">我的收益</h5>
+                <button class="btn btn-warning col-xs-offset-2 col-xs-1">前往提现</button>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-3 col-sm-offset-1">累计预估收益(元)</div>
+            <div class="col-sm-2">
+                <div>今日估计收益(元)</div>
+                <div>本月预估收益(元)</div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <a class="col-xs-1-5" href=""><img src="../static/images/51.png"></a>
+            <a class="col-xs-1-5" href=""><img src="../static/images/52.png"></a>
+            <a class="col-xs-1-5" href=""><img src="../static/images/53.png"></a>
+            <a class="col-xs-1-5" href=""><img src="../static/images/54.png"></a>
+            <a class="col-xs-1-5" href=""><img src="../static/images/55.png"></a>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div><h5>商学院</h5></div>
+            <div class="row col-xs-6">
+                <a class="col-xs-3" href=""><img src="../static/images/57.png"></a>
+                <a class="col-xs-3" href=""><img src="../static/images/58.png"></a>
+                <a class="col-xs-3" href=""><img src="../static/images/59.png"></a>
+                <a class="col-xs-3" href=""><img src="../static/images/60.png"></a>
+                <a class="col-xs-7" href=""><img src="../static/images/61.png"></a>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <div class="row">
+            <div><h5>我的工具</h5></div>
+            <div class="row col-xs-6">
+                <a class="col-xs-3" href=""><img src="../static/images/62.png"></a>
+                <a class="col-xs-3" href=""><img src="../static/images/63.png"></a>
+                <a class="col-xs-3" href=""><img src="../static/images/64.png"></a>
+                <a class="col-xs-3" href=""><img src="../static/images/65.png"></a>
+            </div>
+            <div class="row col-xs-9">
+                <a class="col-xs-2" href=""><img src="../static/images/66.png"></a>
+                <a class="col-xs-3" href=""><img src="../static/images/67.png"></a>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div><h5>其他</h5></div>
+            <div class="row"><a href=""><img src="../static/images/69.png"></a></div>
+            <div class="row"><a href=""><img src="../static/images/70.png"></a></div>
+            <div class="row"><a href=""><img src="../static/images/71.png"></a></div>
+            <div class="row"><a href=""><img src="../static/images/72.png"></a></div>
+        </div>
+
+    </div>
+{% endblock content %}

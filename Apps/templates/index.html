@@ -1,0 +1,248 @@
+{% extends "bootstrap/base.html" %}
+
+{% block styles %}
+    {{ super() }}
+    <style>
+        .row{
+            margin-bottom:20px;
+        }
+        .row .row{
+            margin-top:20px;
+            margin-bottom:20px;
+        }
+        [class*='col-']{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            {#background-color: #eee;#}
+            {#background-color: rgba(86, 61, 124, .15);#}
+            {#border: 1px solid #ddd;#}
+            {#border: 1px solid rgba(86, 61, 124, .2);#}
+
+        }
+        .search{
+            width: 600px;
+        }
+
+        .col-xs-1-5{
+            width:19%;
+        }
+
+        #myCarousel{  {# 设置轮播图大小 #}
+            width:760px;
+        }
+    </style>
+{% endblock styles %}
+{% block content %}
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xs-2">
+                <a href=""><img src="../static/images/logo_red1.jpg"></a>
+{#                <img src="../static/images/logo_red1.jpg">#}
+            </div>
+            <div class="col-xs-2 col-xs-offset-8">
+                <a href="">
+                    <span class="glyphicon glyphicon-comment"></span>邀请
+                </a>
+                <a href="">
+                    <span class="glyphicon glyphicon-envelope"></span>消息
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <form class="navbar-form navbar-left" role="search">
+                <button type="submit" class="btn btn-default input-lg">搜索</button>
+                <div  id="search" class="form-group ">
+                    <input type="text" class="form-control input-lg" placeholder="网购前搜一搜 省下一头牛">
+                </div>
+            </form>
+        </div>
+
+        <div id="mytab" class="row">
+           <ul  class="nav nav-pills" role="tablist">
+            <li role="presentation" class="active col-xs-1-5"><a href="">精选</a></li>
+            <li role="presentation" class="col-xs-1-5"><a href="">超级分类</a></li>
+            <li role="presentation" class="col-xs-1-5"><a href="">排行榜</a></li>
+            <li role="presentation" class="col-xs-1-5"><a href="">9.9包邮</a></li>
+            <li role="presentation" class="col-xs-1-5"><a href="">抖宝</a></li>
+           </ul>
+        </div>
+
+        <div class="row col-xs-offset-2" id="myCarousel">
+            <div id="carousel-example-generic" class="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3" class=""></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4" class=""></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="../static/images/13.jpg">
+                        <div class="carousel-caption">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="../static/images/42.png">
+                        <div class="carousel-caption">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="../static/images/43.png">
+                        <div class="carousel-caption">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../static/images/44.png">
+                        <div class="carousel-caption">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../static/images/11.png">
+                        <div class="carousel-caption">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-2 col-xs-offset-1">
+                <a href="#"><img src="../static/images/26.jpg"></img></a>
+            </div>
+            <div class="col-xs-2">
+                <a href="#"><img src="../static/images/16.jpg"></img></a>
+            </div>
+            <div class="col-xs-2">
+                <a href="#"><img src="../static/images/17.jpg"></img></a>
+            </div>
+            <div class="col-xs-2">
+                <a href="#"><img src="../static/images/18.jpg"></img></a>
+            </div>
+            <div class="col-xs-2">
+                <a href="#"><img src="../static/images/19.jpg"></img></a>
+            </div>
+            <div class="col-xs-2 col-xs-offset-1">
+                <a href="#"><img src="../static/images/20.jpg"></img></a>
+            </div>
+            <div class="col-xs-2">
+                <a href="#"><img src="../static/images/21.jpg"></img></a>
+            </div>
+            <div class="col-xs-2">
+                <a href="#"><img src="../static/images/22.jpg"></img></a>
+            </div>
+            <div class="col-xs-2">
+                <a href="#"><img src="../static/images/24.jpg"></img></a>
+            </div>
+            <div class="col-xs-2">
+                <a href="#"><img src="../static/images/25.jpg"></img></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3">
+                <img src="../static/images/27.jpg"></img>
+            </div>
+            <div class="col-xs-3">
+                <a href="#"><img src="../static/images/28.jpg"></img></a>
+            </div>
+            <div class="col-xs-3">
+                <a href="#"><img src="../static/images/29.jpg"></img></a>
+            </div>
+            <div class="col-xs-3">
+                <a href="#"><img src="../static/images/30.jpg"></img></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3">
+                <img src="../static/images/32.png"></img>
+            </div>
+            <div class="col-xs-3">
+                <a href="#"><img src="../static/images/33.png"></img></a>
+            </div>
+            <div class="col-xs-3">
+                <a href="#"><img src="../static/images/34.png"></img></a>
+            </div>
+            <div class="col-xs-3">
+                <a href="#"><img src="../static/images/35.png"></img></a>
+            </div>
+        </div>
+
+        <div id="mytab" class="row">
+           <ul  class="nav nav-pills nav-justified" role="tablist">
+            <li role="presentation" class="active ccol-xs-3"><a href="">天猫精选</a></li>
+            <li role="presentation" class="col-xs-3"><a href="">拼多多精选</a></li>
+            <li role="presentation" class="col-xs-3" ><a href="">京东精选</a></li>
+            <li role="presentation" class="col-xs-3" ><a href="">唯品会精选</a></li>
+           </ul>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3 col-xs-offset-1">
+                <a href="#"><img src="../static/images/37.png"></img></a>
+            </div>
+            <div class="col-xs-3 col-xs-offset-2">
+                <a href="#"><img src="../static/images/39.png"></img></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3 col-xs-offset-1">
+                <a href="#"><img src="../static/images/40.png"></img></a>
+            </div>
+            <div class="col-xs-3 col-xs-offset-2">
+                <a href="#"><img src="../static/images/41.png"></img></a>
+            </div>
+        </div>
+
+        <div id="mytab" class="row navbar-fixed-bottom col-xs-offset-2 col-xs-8">
+           <ul  class="nav nav-pills nav-justified" role="tablist">
+            <li role="presentation" class="active col-2"><a href="">首页</a></li>
+            <li role="presentation" class="col-2"><a href="">臻选好货</a></li>
+            <li role="presentation" class="col-2" ><a href="">Plus</a></li>
+            <li role="presentation" class="col-2" ><a href="">商学院</a></li>
+            <li role="presentation" class="col-2" ><a href="">我的</a></li>
+           </ul>
+        </div>
+
+
+
+    </div>
+{% endblock content %}
+
+{% block scripts %}
+    {{ super() }}
+    <script>
+        $("#mytab a").click(function(e){
+            e.preventDefault();
+            $(this).tab("show");
+        })
+    </script>
+
+    <script>  // 轮播:每两秒自动切换
+        $(".carousel").carousel({
+            interval:2000
+        })
+    </script>
+{% endblock scripts %}
